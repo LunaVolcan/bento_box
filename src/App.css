@@ -1,0 +1,168 @@
+
+:root {
+  --purple: #7551DC;
+  --yellow: #FFCC6A;
+  --light-yellow: #F9EEE2;
+  --light-purp: #DBD1FC;
+  --main-font: 'DM Sans', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+
+ body{
+  background-color: #EFEFEF;
+  color:  #FFFFFF; 
+  font-family: var(--main-font);
+ } 
+
+.bento-box{
+  /* border: 5px solid red; */
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.2rem;
+  padding: 1.2rem;
+  gap: 1rem;
+  max-width: 400px; 
+  margin: 0 auto;
+}
+
+.item1{
+  background-color: var(--purple);
+  border-radius: 10px;
+  height: 19rem;
+  width: 28rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.item1 img {
+  width: 15rem;
+} 
+.item1 h1 {
+   font-size: 3.3rem;  
+  font-weight: 350;  
+  line-height: 1;  
+  letter-spacing: -0.05em;
+  padding-top: 1rem ;
+  text-shadow: 
+  -1px -1px 0 #000,   /* Top-left outline */
+  1px -1px 0 #000,   /* Top-right outline */
+ -1px  1px 0 #000,   /* Bottom-left outline */
+  1px  1px 0 #000,   /* Bottom-right outline */
+  0px  4px 6px rgba(0, 0, 0, 0.5);
+  transform: scaleY(1.1); 
+} 
+
+.item1 p {
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: .15rem;
+}
+
+.item2{
+  background-color: #F7F7F7;
+  color: black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.item2 h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.item2 img {
+  background-color: #F7F7F7;
+}
+
+.item3{
+  background-color: var(--yellow);
+  color: black;
+  border-radius: 10px;
+  padding: 0 2.5 rem 0 0;
+  height: 19rem;
+  width: 29rem;
+  overflow: visible;
+ 
+}
+
+.item3 h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-left: 1rem;
+}
+
+.item3 img {
+  width: 17rem;
+  margin-left: 1.5rem;
+}
+
+.item4{
+  border: red solid 2px;
+  background-color: var(--light-purp);
+  color: black;
+
+}
+
+.item5{
+  background-color: var(--purple);
+  border-radius: 10px;
+}
+
+.item6{
+  color: black;
+  border-radius: 10px;
+}
+
+.ten{
+  color: var(--yellow);
+  border-radius: 10px;
+  }
+
+.item7{
+  background-color: var(--light-yellow);
+  color: black;
+  border-radius: 10px;
+}
+
+.quick{
+  color: var(--purple);
+  border-radius: 10px;
+}
+
+.item8{
+  background-color: var(--yellow);
+  color: black;
+  border-radius: 10px;
+}
+
+img{
+  width: 26rem;
+}
+
+
+
+
+
+.quicker, .ai, .social-media, .content, .accounts, .posting, .percent, .followers {
+  text-align: center;
+  width: 30rem;
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .bento-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .bento-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
