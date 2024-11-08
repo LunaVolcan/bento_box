@@ -1,4 +1,3 @@
-import './App.css';
 import faces from './assets/illustration-audience-growth.webp';
 import tips from './assets/illustration-ai-content.webp';
 import calendar from './assets/illustration-consistent-schedule.webp';
