@@ -501,7 +501,6 @@ margin-right: 2.3rem;
 
 @media (min-width:950px) and (max-width: 3000px) {
   .bento-box {
-    background-color: violet;
     display: grid;
     max-width: 1200px;
     margin: auto;
@@ -509,27 +508,31 @@ margin-right: 2.3rem;
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, auto);
     gap: 1rem;
     grid-template-areas:
-      "item7 item1 item1 item1 item1 item4"
-      "item7 item1 item1 item1 item1 item4"
-      "item7 item2 item2 item3 item3 item4"
-      "item8 item2 item2 item3 item3 item4"
-      "item8 item6 item5 item5 item5 item5"
-      "item8 item6 item5 item5 item5 item5";
+    "item7 item7 item7 item1 item1 item1 item1 item1 item1 item4 item4 item4"
+    "item7 item7 item7 item1 item1 item1 item1 item1 item1 item4 item4 item4"
+    "item7 item7 item7 item1 item1 item1 item1 item1 item1 item4 item4 item4"
+    "item7 item7 item7 item1 item1 item1 item1 item1 item1 item4 item4 item4"
+    "item7 item7 item7 item2 item2 item2 item3 item3 item3 item4 item4 item4"
+    "item8 item8 item8 item2 item2 item2 item3 item3 item3 item4 item4 item4"
+    "item8 item8 item8 item2 item2 item2 item3 item3 item3 item4 item4 item4"
+    "item8 item8 item8 item6 item6 item6 item5 item5 item5 item5 item5 item5"
+    "item8 item8 item8 item6 item6 item6 item5 item5 item5 item5 item5 item5"
+    "item8 item8 item8 item6 item6 item6 item5 item5 item5 item5 item5 item5";
   }
-
-  .item1 { grid-area: item1; background-color: var(--purple); color: white; text-align: center; }
-  .item2 { grid-area: item2; background-color: white; color: black; }
-  .item3 { grid-area: item3; background-color: var(--yellow); color: black; }
-  .item4 { grid-area: item4; background-color: var(--light-purp); color: black; text-align: center; }
-  .item5 { grid-area: item5; background-color: var(--purple); color: white; text-align: center; }
-  .item6 { grid-area: item6; background-color: white; color: black; text-align: center; }
-  .item7 { grid-area: item7; background-color: var(--light-yellow); color: black; text-align: center; }
-  .item8 { grid-area: item8; background-color: var(--yellow); color: black; text-align: center; }
   
+  .item1 { grid-area: item1; }
+  .item2 { grid-area: item2; }
+  .item3 { grid-area: item3; }
+  .item4 { grid-area: item4; }
+  .item5 { grid-area: item5; }
+  .item6 { grid-area: item6; }
+  .item7 { grid-area: item7; }
+  .item8 { grid-area: item8; }
+
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
     padding: 1.5rem;
     border-radius: 10px;
@@ -542,10 +545,11 @@ margin-right: 2.3rem;
 
   .item1 {
     height: 19em;
-    width: 40rem;
+    width: auto;
     max-width: none;
     overflow: hidden;
   }
+
   .item1 h1 {
     font-size: 4rem;  
     font-weight: 300;  
@@ -572,8 +576,8 @@ margin-right: 2.3rem;
 }
 
 .item2 {
-  height: 17rem;
-  width: 18rem;
+  height: 19em;
+  width: 20rem;
   max-width: none;
   overflow: hidden;
 
@@ -588,8 +592,8 @@ margin-right: 2.3rem;
 
 .item2 img {
   display: block;
-  margin-left: 1.1rem;
-  width: 25rem;
+  margin-top: 1rem;
+  width: 30rem;
   max-width: none;
 }
 
@@ -608,10 +612,9 @@ margin-right: 2.3rem;
 }
 
 .item3 {
-  height: 17em;
-  width: 18rem;
+  height: 19em;
+  width: 20rem;
   max-width: none;
-  margin-right: 5rem;
   overflow: hidden;
 }
 
@@ -625,8 +628,8 @@ margin-right: 2.3rem;
 
 .item3 img {
   display: block;
-  margin-top: 1rem;
-  width: 17rem;
+  margin-top: 1.3rem;
+  width: 20rem;
   max-width: none;
 }
 
@@ -637,27 +640,114 @@ margin-right: 2.3rem;
 
 .item4{
   mask-image: none;
-  width: 12rem;
+  width: 14rem;
   overflow: hidden;
   text-align: left;
-  margin-left: 0;
-  margin-right: 10rem;
+  margin-right: 3rem;
 }
 
 .item4 h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .item4 img {
-  width: 100%;
   max-width: none;
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   margin-top: 1rem; 
   margin-left: 1rem;
+}
+
+.item4 p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-left: 1.5rem;
+}
+
+.item5 {
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  width: auto;
+  margin-right: 3rem;
+}
+
+.item5 h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+
+.item6 {
+ width: auto;
+}
+
+.item6 img {
+  width: 15rem;
+  margin-left: 1.5rem;
+}
+
+.item6 h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.item6 h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-left: 1.5rem;
+  margin-top: -2rem;
+  margin-bottom: 1.5rem;
+}
+
+.item7 {
+  height: auto;
+  width: 14rem;
+  max-width: none;
+}
+
+.item7 h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  text-align: left;
+}
+
+.item7 img {
+  width: 100%;
+  max-width: 15rem;
+  margin-right: 5rem;
+}
+
+.item8 {
+  height: auto;
+  width: 14rem;
+  max-width: none;
+}
+
+.item8 h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.item8 img {
+  width: 15rem;
+  height: 17rem;
+  max-width: none;
+  margin-top: 3rem;
 }
 
 }

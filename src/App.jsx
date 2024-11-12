@@ -1,3 +1,4 @@
+import './App.css';
 import faces from './assets/illustration-audience-growth.webp';
 import tips from './assets/illustration-ai-content.webp';
 import calendar from './assets/illustration-consistent-schedule.webp';
@@ -23,7 +24,7 @@ function App() {
           <h2> <span className="manage">Manage</span> <span className="multi">multiple</span> accounts and platforms.</h2>
         </div>
         <div className="item3">
-          <h2>Maintain a consistent <br /> <span className="po">posting</span> schedule.</h2>
+          <h2>Maintain a consistent <br /> <span className="po"></span>  schedule.</h2>
           <img src={calendar} alt="" />
         </div>
         <div className="item4">
